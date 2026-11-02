@@ -1,6 +1,6 @@
 # TFM-Evolve
 
-## Proyecto del Máster en Data Science & IA
+## Proyecto Transversal — Máster en Data Science e Inteligencia Artificial
 
 **Centro:** Evolve
 **Curso académico:** 2026–2027
@@ -10,12 +10,12 @@
 
 | Integrante                                        | Usuario de GitHub |
 | ------------------------------------------------- | ----------------- |
-| Jorge Artiles Sanchez                               @jorgeartsan-lgtm 
+| Jorge Artiles                                     | @jorgeartsan-lgtm |
 |                                                   |                   |
 
 ### Descripción del proyecto
 
-Este repositorio contiene la documentación y el futuro desarrollo del proyecto transversal del Máster en Data Science & IA de Evolve.
+Este repositorio contiene la documentación y el futuro desarrollo del proyecto transversal del Máster en Data Science e Inteligencia Artificial de Evolve.
 
 El objetivo es diseñar y desarrollar un producto que resuelva una necesidad real utilizando análisis de datos, programación, bases de datos y técnicas de inteligencia artificial.
 
@@ -36,4 +36,5 @@ Entre las posibles herramientas se encuentran Python, SQL, Pandas, Scikit-learn,
 ---
 
 Proyecto académico desarrollado durante el Máster de Data Science e IA — Evolve 2026–2027.
+
 
