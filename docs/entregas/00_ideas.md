@@ -160,22 +160,153 @@ La versión mínima incluirá:
 
 ---
 
-## 4. Propuesta 3 — Pendiente de definir
+## 4. Propuesta 3 — Predicción del rendimiento de vídeos de cocina
 
-**Título:** pendiente.
+### Título y descripción
 
-**Descripción:** pendiente.
+**RecipePredict AI — Plataforma inteligente de análisis y optimización de contenido gastronómico**
 
-**Problema y usuario:** pendiente.
+Desarrollar una plataforma de Data Science e Inteligencia Artificial que ayude a creadores de contenido de cocina a analizar sus vídeos antes de publicarlos y estimar su rendimiento potencial.
 
-**Uso y valor:** pendiente.
+La aplicación combinará información histórica del creador con características del contenido para identificar factores asociados a un mejor rendimiento y ofrecer recomendaciones personalizadas.
 
-**Datos y fuentes candidatas:** pendiente.
+### Problema y usuario
 
-**Primera versión (MVP):** pendiente.
+Los creadores de contenido gastronómico publican vídeos en plataformas como TikTok, YouTube e Instagram sin disponer de una estimación personalizada sobre su rendimiento.
 
-**Viabilidad y dudas:** pendiente.
+Aunque las plataformas proporcionan estadísticas de visualizaciones, interacciones y retención, normalmente estas métricas se conocen después de publicar. Además, interpretar qué características influyen en los resultados requiere comparar numerosos vídeos.
 
+Las estrategias utilizadas por creadores con grandes audiencias no necesariamente funcionan en cuentas pequeñas, ya que cada canal tiene una audiencia, un estilo y un historial diferentes.
+
+**Usuarios objetivo:** creadores de recetas y contenido gastronómico que quieran mejorar el rendimiento de sus publicaciones mediante el análisis de datos.
+
+Actualmente, estos usuarios suelen consultar las estadísticas de cada plataforma, comparar manualmente publicaciones y probar distintos formatos mediante ensayo y error.
+
+### Uso y valor
+
+Un creador prepara un vídeo de una receta y, antes de publicarlo, lo sube a la aplicación junto con el título, la descripción y los hashtags previstos.
+
+La plataforma analiza características del contenido, como la duración, el tipo de receta, la presencia de voz, el texto y determinados elementos visuales.
+
+Posteriormente, compara estas características con el historial del propio creador y presenta:
+
+- Una estimación de rendimiento bajo, medio o alto respecto a sus publicaciones anteriores.
+- Los factores que el modelo considera más relevantes para la predicción.
+- Comparaciones con vídeos anteriores de características similares.
+- Entre tres y cinco recomendaciones de mejora basadas en patrones detectados.
+
+Por ejemplo, la herramienta podría identificar que los vídeos de recetas de entre 30 y 45 segundos han obtenido históricamente mejores resultados en ese canal y sugerir ajustes en la duración de una nueva publicación.
+
+Las recomendaciones se presentarían como hipótesis basadas en datos, no como garantías de conseguir más visualizaciones.
+
+**Valor aportado:** ayudar a los creadores a tomar decisiones sobre sus publicaciones utilizando evidencias de su propio contenido, en lugar de depender únicamente de tendencias generales.
+
+### Datos necesarios y fuentes
+
+**1. Historial de contenido del creador**
+
+Se dispone de una fuente candidata especialmente relevante: un canal propio de recetas con más de 100 vídeos publicados entre TikTok, YouTube e Instagram, incluyendo publicaciones que han alcanzado hasta 321.000 visualizaciones.
+
+Datos de interés:
+
+- Identificador y plataforma del vídeo.
+- Fecha y hora de publicación.
+- Duración.
+- Título y descripción.
+- Hashtags utilizados.
+- Visualizaciones.
+- Me gusta, comentarios y otras interacciones disponibles.
+- Métricas de retención, cuando puedan obtenerse.
+- Archivo audiovisual original, si está disponible.
+
+**Estado del acceso:** la existencia del historial del canal ha sido comunicada por un integrante del equipo. Está pendiente verificar qué métricas pueden exportarse y si se dispone de los archivos originales.
+
+**2. APIs oficiales**
+
+Fuentes candidatas:
+
+- YouTube Data API: https://developers.google.com/youtube/v3
+- YouTube Analytics API: https://developers.google.com/youtube/analytics
+- TikTok for Developers: https://developers.tiktok.com/
+- TikTok Research API, únicamente si se cumplen sus requisitos de elegibilidad.
+- Instagram Graph API, según los permisos y condiciones aplicables a la cuenta.
+
+**Estado del acceso:** pendiente de verificar la autorización, los permisos específicos, las cuotas y las condiciones de utilización de cada API.
+
+Se priorizarán exportaciones autorizadas del propio creador para evitar que el MVP dependa del acceso a todas las plataformas.
+
+**3. Características extraídas del contenido**
+
+Mediante herramientas de procesamiento de vídeo, audio y lenguaje natural se podrían obtener variables como:
+
+- Duración del vídeo.
+- Presencia de voz o música.
+- Transcripción del contenido hablado.
+- Palabras utilizadas en el título.
+- Cantidad y tipo de hashtags.
+- Categoría de receta.
+- Características visuales de los primeros segundos.
+
+**Privacidad y restricciones:** los vídeos y las métricas privadas se utilizarán con autorización de sus titulares. Se respetarán los términos de las plataformas y no se publicarán tokens, credenciales ni datos privados de audiencia.
+
+### Primera versión — MVP
+
+Para mantener un alcance viable, el primer prototipo se centrará en analizar el historial de un creador y elaborar recomendaciones mediante un modelo sencillo.
+
+**Funciones mínimas:**
+
+1. Importación de un dataset con las publicaciones históricas y sus métricas.
+2. Limpieza y almacenamiento de información en una base de datos SQL.
+3. Análisis exploratorio del rendimiento según duración, hashtags, tipo de receta y otras variables disponibles.
+4. Cálculo de indicadores de rendimiento relativos al historial del creador, diferenciando plataformas cuando corresponda.
+5. Desarrollo y evaluación de un modelo predictivo inicial que clasifique publicaciones por rendimiento, siempre que el volumen y la calidad de los datos lo permitan.
+6. Dashboard en Streamlit con gráficos comparativos y recomendaciones basadas en patrones históricos.
+
+**Demostración funcional:**
+
+El usuario introduce las características de una publicación que todavía no ha realizado y recibe una estimación de rendimiento, si el modelo ha superado las pruebas de validación, junto con comparaciones históricas y recomendaciones.
+
+**Fuera del MVP:**
+
+- Análisis audiovisual automatizado completo mediante OpenCV y Whisper.
+- Predicción universal para cualquier creador.
+- Integración automática con las tres plataformas.
+- Generación o edición automática de vídeos.
+- Predicciones exactas del número de visualizaciones.
+
+Estas funciones podrían incorporarse en fases posteriores.
+
+### Viabilidad y dudas
+
+La principal dificultad es disponer de suficientes datos históricos y determinar qué variables permiten predecir resultados de forma fiable.
+
+Con aproximadamente 100 vídeos repartidos entre distintas plataformas, existe riesgo de sobreajuste y de obtener predicciones poco generalizables.
+
+También será necesario considerar que las visualizaciones dependen de factores externos, como el tamaño de la audiencia, los algoritmos de recomendación y la antigüedad de cada publicación.
+
+Para comprobar la viabilidad se propone:
+
+- Verificar qué datos históricos están realmente disponibles.
+- Analizar cuántas publicaciones comparables existen por plataforma.
+- Definir un indicador de rendimiento normalizado respecto al creador.
+- Evaluar modelos sencillos antes de utilizar algoritmos más complejos como XGBoost.
+- Separar cronológicamente los datos de entrenamiento y evaluación.
+- Utilizar únicamente variables conocidas antes de publicar para realizar las predicciones.
+- Comparar los resultados del modelo con una predicción de referencia basada en el historial.
+
+Como ampliación, se podrá estudiar el uso de SHAP para interpretar las predicciones y herramientas como OpenCV y Whisper para extraer características adicionales.
+
+### Validación del producto
+
+Se propone validar el sistema utilizando el canal de recetas del integrante del equipo.
+
+Primero se analizará el historial existente para comprobar la capacidad predictiva del modelo con publicaciones anteriores no utilizadas en el entrenamiento.
+
+Posteriormente, se podrán realizar pruebas con vídeos nuevos, registrando las recomendaciones aplicadas y su rendimiento real.
+
+Esta evaluación permitirá comprobar si las recomendaciones resultan útiles. Para atribuir mejoras al producto será necesario controlar otros factores y, cuando sea posible, comparar publicaciones equivalentes.
+
+**Resultado esperado:** una aplicación web desarrollada con Streamlit que permita analizar el historial de un creador de cocina, estudiar sus patrones de rendimiento y obtener recomendaciones personalizadas para futuras publicaciones.
 |   |
 | - |
 |   |
