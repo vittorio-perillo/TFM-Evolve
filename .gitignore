@@ -1,0 +1,61 @@
+# Python - Cache y archivos compilados
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Editores de codigo
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales y logs
+*.log
+*.tmp
+*.bak
+
+# Archivos de compilacion
+build/
+dist/
+*.egg-info/
+
+# Datos privados o sin permiso de distribucion
+data/private/
+data/raw/
+
+# Bases de datos locales
+*.sqlite
+*.sqlite3
+*.db
+
+# Modelos de Machine Learning temporales
+models/checkpoints/
+*.pkl
+*.joblib
+
+# Cobertura de pruebas
+.coverage
+htmlcov/
