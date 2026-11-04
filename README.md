@@ -12,7 +12,7 @@
 |---|---|
 | Jorge Artiles | [@jorgeartsan-lgtm](https://github.com/jorgeartsan-lgtm) |
 | Vittorio Perillo | [@vittorio-perillo](https://github.com/vittorio-perillo) |
-| Pablo Roldan |(https://github.com/proldang97)|
+| Pablo Roldan |([@proldang97](https://github.com/proldang97)|
 ### Descripción del proyecto
 
 Este repositorio contiene la documentación y el futuro desarrollo del proyecto transversal del Máster en Data Science e Inteligencia Artificial de Evolve.
