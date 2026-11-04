@@ -354,7 +354,3 @@ Posteriormente, se podrán realizar pruebas con vídeos nuevos, registrando las 
 Esta evaluación permitirá comprobar si las recomendaciones resultan útiles. Para atribuir mejoras al producto será necesario controlar otros factores y, cuando sea posible, comparar publicaciones equivalentes.
 
 **Resultado esperado:** una aplicación web desarrollada con Streamlit que permita analizar el historial de un creador de cocina, estudiar sus patrones de rendimiento y obtener recomendaciones personalizadas para futuras publicaciones.
-|   |
-| - |
-|   |
-
