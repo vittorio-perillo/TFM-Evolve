@@ -78,6 +78,27 @@ La primera versión incluirá:
 
 **Fuera del MVP:** comparación exhaustiva de comercializadoras, recomendaciones de potencia contratada y predicciones a 72 horas sin validación suficiente.
 
+### Viabilidad y dudas
+
+La propuesta es viable como proyecto de Data Science, ya que existen fuentes oficiales, como Red Eléctrica y e·sios, que publican información sobre el mercado eléctrico español. Sin embargo, debemos comprobar qué datos históricos podemos obtener, su granularidad y las condiciones de acceso.
+
+**Principales dificultades:**
+
+- **Disponibilidad de datos:** necesitamos precios eléctricos históricos y perfiles de consumo horario de hogares. Podemos comenzar con datos simulados si no disponemos de consumos reales.
+- **Precisión de las predicciones:** el precio eléctrico está influido por múltiples factores, como la demanda, la generación renovable y las condiciones meteorológicas. Debemos comprobar si nuestros modelos mejoran las predicciones de referencia.
+- **Personalización:** las recomendaciones dependerán de los hábitos de consumo y de qué electrodomésticos pueden utilizarse en otros horarios.
+- **Cálculo del ahorro:** será necesario distinguir entre el precio horario de la energía y el importe final de la factura, que incluye otros conceptos.
+
+**¿Cómo comprobaremos su viabilidad?**
+
+Primero verificaremos el acceso a los datos históricos y construiremos un pequeño dataset. Después, desarrollaremos un prototipo que calcule el coste del consumo de un hogar y simule cambios de horario.
+
+Si conseguimos demostrar un ahorro potencial medible y razonable mediante estas simulaciones, tendremos una primera validación de la utilidad del producto.
+
+La predicción de precios a 24–72 horas y la comparación de tarifas se plantearán como ampliaciones, dependiendo de la calidad y disponibilidad de los datos.
+
+**Conclusión:** consideramos que la propuesta tiene una viabilidad técnica media-alta, especialmente si comenzamos con un simulador de consumo y ahorro antes de incorporar modelos predictivos avanzados.
+
 ---
 
 ## 3. Propuesta 2 — Predicción de saturación turística en España
@@ -157,6 +178,32 @@ La versión mínima incluirá:
 **Demostración funcional:** el usuario selecciona una región y un mes; el dashboard muestra indicadores históricos, permite compararlos y presenta alternativas con menor concentración relativa.
 
 **Fuera del MVP:** predicción de saturación a nivel de calle, monitorización en tiempo real y análisis exhaustivo de todos los municipios españoles.
+
+### Viabilidad y dudas
+
+La propuesta presenta una viabilidad inicial favorable porque España dispone de estadísticas oficiales de turismo publicadas por organismos como el Instituto Nacional de Estadística (INE) y diferentes portales de datos abiertos.
+
+Nuestro objetivo será analizar **la totalidad del territorio español**, comparando comunidades autónomas y, cuando la disponibilidad de los datos lo permita, provincias y municipios.
+
+**Principales dificultades:**
+
+- **Disponibilidad y granularidad:** necesitamos comprobar qué indicadores turísticos están disponibles a escala nacional, autonómica, provincial y municipal, y con qué frecuencia se actualizan.
+- **Definición de saturación turística:** un número elevado de visitantes no implica necesariamente saturación. Tendremos que definir indicadores que relacionen la actividad turística con las características del territorio, como plazas de alojamiento, población residente u ocupación.
+- **Predicción:** la demanda turística depende de la estacionalidad, los festivos, los acontecimientos y otros factores externos. Será necesario comprobar si las series históricas permiten entrenar modelos predictivos suficientemente fiables.
+- **Comparabilidad:** los datos de diferentes territorios pueden presentar diferencias metodológicas o periodos de cobertura distintos.
+- **Recomendaciones:** los destinos alternativos deberán seleccionarse mediante criterios objetivos y no únicamente por presentar menos visitantes.
+
+**¿Cómo comprobaremos su viabilidad?**
+
+En primer lugar, verificaremos la disponibilidad de series históricas comparables para las comunidades autónomas españolas.
+
+A continuación, desarrollaremos un análisis exploratorio para identificar patrones de estacionalidad y concentración turística. Utilizaremos modelos predictivos sencillos como referencia y evaluaremos posteriormente otros algoritmos, como XGBoost, si los datos lo justifican.
+
+Por último, construiremos un prototipo de dashboard con un mapa de España que permita comparar territorios, periodos e indicadores turísticos.
+
+La cobertura nacional será el objetivo del producto, aunque inicialmente podremos trabajar con datos agregados por comunidades autónomas para mantener un alcance viable.
+
+**Conclusión:** consideramos que la propuesta tiene una viabilidad técnica media-alta. La principal incertidumbre es encontrar indicadores suficientemente representativos para medir la presión turística y generar recomendaciones fiables.
 
 ---
 
