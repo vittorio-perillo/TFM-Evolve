@@ -8,7 +8,7 @@
 
 ---
 
-## 2. Propuesta 1 — Optimizador inteligente del consumo eléctrico
+## 1. Propuesta 1 — Optimizador inteligente del consumo eléctrico
 
 ### Título y descripción
 
@@ -101,7 +101,7 @@ La predicción de precios a 24–72 horas y la comparación de tarifas se plante
 
 ---
 
-## 3. Propuesta 2 — Predicción de saturación turística en España
+## 2. Propuesta 2 — Predicción de saturación turística en España
 
 ### Título y descripción
 
@@ -207,7 +207,7 @@ La cobertura nacional será el objetivo del producto, aunque inicialmente podrem
 
 ---
 
-## 4. Propuesta 3 — Predicción del rendimiento de vídeos de cocina
+## 3. Propuesta 3 — Predicción del rendimiento de vídeos de cocina
 
 ### Título y descripción
 
