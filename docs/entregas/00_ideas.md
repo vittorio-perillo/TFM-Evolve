@@ -164,6 +164,17 @@ El sistema ofrecerá:
 
 **Restricciones:** será necesario respetar las licencias de reutilización y evitar interpretar el número de visitantes como una medida directa y definitiva de saturación.
 
+### Evidencias adicionales
+
+**Encuestas reconocidas**
+
+1.- Según Airbnb, el 74% de los viajeros de la Generación Z elegiría un pueblo pequeño antes que una gran ciudad para su próximo viaje. Y más de la mitad evita destinos turísticos porque están demasiado llenos para disfrutarlos.
+2.- El informe de tendencias 2026 de Wotif (Expedia) apunta en la misma dirección: el 80% de los viajeros quiere un ritmo más tranquilo y menos multitudes, y el 72% quiere apoyar a las comunidades locales.
+
+La BBC Travel publicó un artículo muy interesante sobre esta tendencia. Su tesis es que estos destinos ofrecen una experiencia más ligada a la vida cotidiana: alojamientos familiares, restaurantes con producto local y una economía que no depende solo del visitante.
+
+En esa misma encuesta de Airbnb, el 63% de los jóvenes reconoce que ser de los primeros en visitar un lugar le da estatus. Y la propia plataforma ya ha lanzado una campaña con influencers para promocionar pueblos “desconocidos”.
+
 ### Primera versión — MVP
 
 La versión mínima incluirá:
