@@ -6,6 +6,14 @@
 
 **Repositorio:** [https://github.com/vittorio-perillo/TFM-Evolve](https://github.com/vittorio-perillo/TFM-Evolve)
 
+Equipo de desarrollo
+Integrante	Usuario de GitHub
+Jorge Artiles	@jorgeartsan-lgtm
+Vittorio Perillo	@vittorio-perillo
+Pablo Roldan Gomez	@proldang97
+David Suarez Martin	@davidsm0
+Adriana Ruiz González	@adrianaruizgonzalez-lab
+
 ---
 
 ## 1. Propuesta 1 — Optimizador inteligente del consumo eléctrico
