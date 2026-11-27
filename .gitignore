@@ -45,6 +45,7 @@ dist/
 # Datos privados o sin permiso de distribucion
 data/private/
 data/raw/
+data/silver/
 
 # Bases de datos locales
 *.sqlite
